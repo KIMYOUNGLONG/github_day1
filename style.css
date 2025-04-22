@@ -1,0 +1,84 @@
+/* ✅ 상단바 전체 */
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  
+  /* ✅ 왼쪽 영역 */
+  .left-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* ✅ 가운데 검색창 */
+  .center-section {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 70%;
+    padding: 8px 12px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+  }
+  
+  .search-button {
+    padding: 8px 16px;
+    background-color: #f8f8f8;
+    color: black;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* ✅ 오른쪽 아이콘 영역 */
+  .right-section {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .right-section button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .right-section button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
+  
+  /* 프로필 이미지 */
+  .right-section img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

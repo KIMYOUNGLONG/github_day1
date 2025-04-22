@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Clone - 상단바</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
+  <!-- 상단 바 -->
+  <div class="top-bar">
+    
+    <!-- 왼쪽: 햄버거 메뉴 + 유튜브 SVG 로고 -->
+    <div class="left-section">
+      <span style="font-size: 20px;">☰</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="90" height="24" viewBox="0 0 90 24">
+        <rect width="90" height="24" fill="white"/>
+        <text x="0" y="17" fill="red" font-size="18" font-family="Arial" font-weight="bold">You</text>
+        <text x="38" y="17" fill="black" font-size="18" font-family="Arial" font-weight="bold">Tube</text>
+      </svg>
+    </div>
+
+    <!-- 중앙: 검색창 -->
+    <div class="center-section">
+      <input type="text" class="search-input" placeholder="검색어를 입력하세요" />
+      <button class="search-button">검색</button>
+    </div>
+
+    <!-- 오른쪽: 아이콘 자리 (알림, 프로필 등) -->
+    <div class="right-section">
+      <span style="font-size: 18px;">🔔</span>
+      <span style="font-size: 18px;">👤</span>
+    </div>
+
+  </div>
 </body>
 </html>
